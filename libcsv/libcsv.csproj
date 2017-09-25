@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>kenjiuno.libcsv</PackageId>
+    <PackageVersion>0.1.18</PackageVersion>
+    <Authors>kenjiuno</Authors>
+    <Description>CSV file reader/writer</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Copyright>Copyright (c) 2017, 枚岡合金工具株式会社</Copyright>
+    <PackageTags>csv</PackageTags>
+    <PackageProjectUrl>https://github.com/HiraokaHyperTools/libcsv</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/HiraokaHyperTools/libcsv.git</RepositoryUrl>
+  </PropertyGroup>
+</Project>
