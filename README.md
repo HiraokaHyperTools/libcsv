@@ -1,6 +1,8 @@
 # libcsv
 CSV file reader/writer
 
+nuget https://www.nuget.org/packages/kenjiuno.libcsv/
+
 Reader:
 ```C#
 var csv = new Csvr();
