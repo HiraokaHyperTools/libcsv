@@ -150,7 +150,7 @@ namespace libcsv
             EOL = 8,
         }
 
-        public void ReadStr(String text, char sep, char quote)
+        public Csvr ReadStr(String text, char sep, char quote)
         {
             Reader reader = new Reader(text, sep, quote);
             List<String> columns = new List<String>();
@@ -200,6 +200,7 @@ namespace libcsv
                 }
             }
             Rows = rows.ToArray();
+            return this;
         }
     }
 }

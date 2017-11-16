@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using System.Linq;
 
 namespace libcsv.tests
 {
@@ -98,7 +99,18 @@ namespace libcsv.tests
         {
             reader.ReadStr("#1,2,3#\n", ',', '#');
             Assert.Equal(reader.Rows.Length, 1);
-            Assert.Equal(reader.Rows[0], new String[] { "1,2,3"});
+            Assert.Equal(reader.Rows[0], new String[] { "1,2,3" });
+        }
+
+        [Fact]
+        public void TestToDictionaryListSimple()
+        {
+            var list = reader.ReadStr("1,2,3\na,b,c", ',', '"').ToDictionaryList().ToArray();
+            Assert.Equal(list.Length, 1);
+            Assert.Equal(list[0]["1"], "a");
+            Assert.Equal(list[0]["2"], "b");
+            Assert.Equal(list[0]["3"], "c");
+            Assert.Equal(list[0]["4"], null);
         }
     }
 }
