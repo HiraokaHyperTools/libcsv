@@ -6,9 +6,10 @@
 
   <PropertyGroup>
     <PackageId>kenjiuno.libcsv</PackageId>
-    <PackageVersion>0.2.0</PackageVersion>
+    <PackageVersion>0.2.1</PackageVersion>
     <Authors>kenjiuno</Authors>
-    <Description>CSV file reader/writer</Description>
+    <Title>CSV file reader/writer for .NET Standard 1.0</Title>
+    <Description>CSV file reader/writer for</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Copyright>Copyright (c) 2017, 枚岡合金工具株式会社</Copyright>

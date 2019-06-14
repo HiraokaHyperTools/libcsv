@@ -1,9 +1,11 @@
 # libcsv
-CSV file reader/writer
+
+CSV file reader/writer for .NET Standard 1.0
 
 nuget https://www.nuget.org/packages/kenjiuno.libcsv/
 
 Reader:
+
 ```C#
 var csv = new Csvr();
 
@@ -15,6 +17,7 @@ Console.WriteLine(csv.Rows[0][0]);
 ```
 
 Writer:
+
 ```C#
 using (var writer = new StringWriter()) {
   var csv = new Csvw(writer, ',', '"');
